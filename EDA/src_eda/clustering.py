@@ -17,7 +17,7 @@ class DataProcessor:
     def extract_answer_embeddings(self):
         return np.array(self.df['Answer_Solution_embedding'].tolist())
     
-    #def get_concat_embeddings(self, subset = ['Question_embedding', ]):
+    
     
     
 
