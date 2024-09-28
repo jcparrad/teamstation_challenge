@@ -5,3 +5,4 @@ from .retriever import Retriever
 from .reranker import Reranker
 from .response_synthesizer import ResponseSynthesizer
 from .rag_query_engine import RAGQueryEngine
+from .ragas_evaluator import RAGASEvaluator

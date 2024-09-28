@@ -1,11 +1,16 @@
-# Exploratory Data Analysis EDA
-The readme file for Exploratory data analysis is here: [EDA](EDA/README.md)
+# Exploratory Data Analysis (EDA)
 
-# Setting up the retrieval system
+For detailed information on the Exploratory Data Analysis, please refer to the following README file: [EDA Documentation](EDA/README.md).
 
-I use a modular system with these components:
-1. search
-2. reranking modules
+---
 
-the readme file is here: [Setting up the retrieval system](RAG/README.md)
+# Setting Up the Retrieval System
 
+I have implemented a modular retrieval system comprising the following components:
+
+1. **Search Module**
+2. **Reranking Module**
+3. **Generation Module**
+4. **Evaluation Module**
+
+For comprehensive instructions on setting up the retrieval system, please refer to the following README file: [Setting Up the Retrieval System](RAG/README.md).
