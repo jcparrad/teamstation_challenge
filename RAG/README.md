@@ -63,10 +63,19 @@ The results for the RAG system are as follows:
 2. **Without Reranking Module**:
    ![RAGAS Evaluation Without Reranker](readme_images/df_result_without_reranker.png)
 
+
+Some analysis from here:
+
+1. Improved Relevance: The increase in answer relevance from 0.85 to 0.89 indicates that the reranking module is effectively identifying and prioritizing responses that are more aligned with the user’s query.
+2. Trade-off Between Relevance and Faithfulness: The decrease in faithfulness from 0.82 to 0.78 suggests that while the reranker is improving relevance, it may be sacrificing some degree of fidelity to the original sources or context of the information. This can happen if the reranking process emphasizes certain aspects of the data that enhance relevance but do not fully reflect the original content's accuracy or completeness
+
 ### Potential Additional Experiments
 
 Future experiments could explore different response modes beyond "compact." For instance:
 
 1. **Refine**: Create and refine an answer by sequentially processing each retrieved text chunk, leading to multiple LLM calls—one per node/retrieved chunk.
 2. **Tree Summarize**: Query the LLM using a summary template prompt as many times as necessary until all concatenated chunks have been queried. This results in multiple answers that are recursively used as chunks in a tree summarization LLM call until only one final answer remains.
+
+
+
 

@@ -108,12 +108,12 @@ Desktop.ini
 .env
 
 # Git-LFS
-*.psd
-*.pdf
-*.png
-*.jpg
-*.jpeg
-*.gif
+# *.psd
+# *.pdf
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
 
 # General large files and backups
 *.tar.gz
