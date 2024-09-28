@@ -1,4 +1,3 @@
-
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -8,9 +7,11 @@ class MissingDataAnalyzer:
         self.dataframe = dataframe
 
     def missing_data_summary(self):
-        """Generates a summary of missing values in the DataFrame."""
-        missing_info = self.dataframe.isnull().sum()
-        missing_info = missing_info[missing_info > 0]
+        """Generates a summary of missing values in the DataFrame, including counts and percentages."""
+        missing_count = self.dataframe.isnull().sum()  # Count of missing values
+        missing_percentage = (missing_count / len(self.dataframe)) * 100  # Percentage of missing values
+        missing_info = pd.DataFrame({'Missing Count': missing_count, 'Missing Percentage': missing_percentage})
+        missing_info = missing_info[missing_info['Missing Count'] > 0]  # Filter columns with missing values
         return missing_info
 
     def visualize_missing_data(self):
